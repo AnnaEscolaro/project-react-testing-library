@@ -9,6 +9,7 @@ type PokemonProps = {
   showDetailsLink: boolean,
   isFavorite: boolean
 };
+//
 
 function Pokemon(props: PokemonProps) {
   const { isFavorite, showDetailsLink, pokemon } = props;
