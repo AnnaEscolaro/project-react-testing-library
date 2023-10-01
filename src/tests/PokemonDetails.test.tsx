@@ -7,11 +7,9 @@ const pikachuRoute = '/pokemon/25';
 
 test('Se as informações detalhadas do Pokémon selecionado são mostradas na tela', () => {
   renderWithRouter(<App />, { route: pikachuRoute });
-  //   const details = screen.getByText('More details');
   const title = screen.getByText('Pikachu Details');
   const summary = screen.getByText('Summary');
   const description = screen.getByText('This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.');
-  //   expect(details).not.toBeInTheDocument();
   expect(title).toBeInTheDocument();
   expect(summary).toBeInTheDocument();
   expect(description).toBeInTheDocument();
